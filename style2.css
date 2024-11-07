@@ -97,7 +97,7 @@ body {
     background-position: top center; /* Coloca la imagen en la parte superior y centrada */
 }
 #Card-Wo{
-    /*background-color: #F9F7C9;*/
+    background-color: #F9F7C9;
     margin-top: 0cm;
     /*background-image: url('img/IMG_0603.JPG');*/
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
@@ -106,8 +106,7 @@ body {
     width: auto;            /* Anchura del círculo */
     height: auto;           /* Altura del círculo */
     background-attachment: fixed;
-    margin: 0;
-    height: 400vh;  
+    margin: 0; 
     background-position: top center;
     margin: 0 auto; /* Coloca la imagen en la parte superior y centrada */
 }
@@ -191,7 +190,7 @@ body {
     padding-right: 45%;
 }
 #Card-Fondo6{
-    /*background-color: #56070c;*/
+    background-color: #a4666e;
     margin-top: 0cm;
     /*background-image: url('img/IMG_0624.JPG'); */
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
@@ -203,8 +202,10 @@ body {
     margin: 0; 
     background-position: top center; 
     margin: 0 auto;
-    padding-left: 10%;
-    padding-right: 10%;/* Coloca la imagen en la parte superior y centrada */
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 50%;/* Coloca la imagen en la parte superior y centrada */
+    padding-top: 50%;
 }
 #Card-Regalo{
     background-color: #F9F7C9;
