@@ -347,6 +347,13 @@ body {
     object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
     border: 2px solid #ccc; /* Opcional: Añade un borde */
 }
+.adjust2 {
+    width: 70px; /* Ajusta el tamaño como prefieras */
+    height: 70px; /* Asegúrate de que el ancho y alto sean iguales para el efecto de círculo */
+    border-radius: 10%; /* Esto hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    border: 2px solid #ccc; /* Opcional: Añade un borde */
+}
 .image-container {
     display: flex;
     justify-content: center;
