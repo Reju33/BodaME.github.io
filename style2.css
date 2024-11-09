@@ -9,21 +9,21 @@ body {
 }
 /* C */
 .cards {
-    width: 48%; 
+    width: 100%; 
     border-style:hidden;
     border-radius: 1em;
-    background-color: #ddcdce;
+    background-color: #b89194;
     border-radius: 0%; /* Hace el contenedor circular */
     overflow: hidden; /* Para asegurarte de que todo dentro siga las proporciones del círculo */
     display: flex;
-    height: 800px;
-    border-radius: 50%; /* Hace el contenedor circular */
+    height: 400px;
+    border-radius: 80%; /* Hace el contenedor circular */
     overflow: hidden; /* Asegura que el contenido dentro del círculo no se salga */
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor de las tarjetas */
+    box-shadow: 0px 20px 20px rgba(116, 41, 41, 0.2); /* Sombra alrededor de las tarjetas */
 }
 
 .Color{
@@ -93,11 +93,11 @@ body {
     height: 100px;           /* Altura del círculo */
     background-attachment: fixed;
     margin: 0;
-    height: 200vh;  
-    background-position: top center; /* Coloca la imagen en la parte superior y centrada */
+    height: 50vh;  
+  /*  background-position: top center; /* Coloca la imagen en la parte superior y centrada */
 }
 #Card-Wo{
-    background-color: #F9F7C9;
+    /*background-color: #F9F7C9;*/
     margin-top: 0cm;
     /*background-image: url('img/IMG_0603.JPG');*/
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
@@ -118,14 +118,14 @@ body {
    /* background-position: center; /* Centra la imagen */
    /* background-repeat: no-repeat; /* Evita que la imagen se repita */
    width: auto;             /* Anchura del círculo */
-    height: 1000px;           /* Altura del círculo */
+           /* Altura del círculo */
     background-attachment: fixed;
     margin: 0;
-    height: 120vh;  
+    height: auto;  
     background-position: top center; 
     margin: 0 auto;/* Coloca la imagen en la parte superior y centrada */
-    padding-left: 45%;
-    padding-right: 45%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #Card-Fondo2{
     /*background-color: #56070c;*/
@@ -151,11 +151,10 @@ body {
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
    /* background-position: center; /* Centra la imagen */
    /* background-repeat: no-repeat; /* Evita que la imagen se repita */
-   width: auto;           /* Anchura del círculo */
-    height: 1000px;           /* Altura del círculo */
+   width: auto;           /* Anchura del círculo */         /* Altura del círculo */
     background-attachment: fixed;
     margin: 0;
-    height: 750vh;  
+    height:auto; 
     background-position: top center;
     margin: 0 auto; /* Coloca la imagen en la parte superior y centrada */
 }
@@ -214,15 +213,32 @@ body {
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
    /* background-position: center; /* Centra la imagen */
    /* background-repeat: no-repeat; /* Evita que la imagen se repita */
-   width: auto;           /* Anchura del círculo */
-    height: 1200px;           /* Altura del círculo */
+   width: auto;           /* Anchura del círculo */           /* Altura del círculo */
     background-attachment: fixed;
     margin: 0;
-    height: 300vh;  
+    height: auto; 
     background-position: top center; /* Coloca la imagen en la parte superior y centrada */
     padding-left: 35%;
     padding-right: 35%;
+    background-size: contain; 
 }
+#Card-Regalos {
+    background-color: #F9F7C9;
+    margin-top: 0cm;
+    background-image: url('img/fondo.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+   /* background-position: center; /* Centra la imagen */
+   /* background-repeat: no-repeat; /* Evita que la imagen se repita */
+   width: auto;           /* Anchura del círculo */           /* Altura del círculo */
+    background-attachment: fixed;
+    margin: 0;
+    height: auto; 
+    background-position: top center; /* Coloca la imagen en la parte superior y centrada */
+    padding-left: 35%;
+    padding-right: 35%;
+    background-size: contain; 
+}
+
 #Card-Regalo2{
     background-color: #5b0816;
     margin-top: 0cm;
@@ -307,24 +323,38 @@ body {
     margin: 0 auto; 
 }
 .circle {
-    width: 400px;            /* Anchura del círculo */
-    height: 400px;           /* Altura del círculo */
+    width: 150px;            /* Anchura del círculo */
+    height: 150px;           /* Altura del círculo */
     border-radius: 50%;      /* Hace el div circular */
-   /** overflow: hidden;        /* Oculta el contenido que sobrepasa los bordes */
+    overflow: hidden;        /* Oculta el contenido que sobrepasa los bordes */
    /*display: flex;
     justify-content: center;
     align-items: center;
     justify-content: center; */
+    margin: 0 auto;
 }
 .circle img {
-    width: 100%;             /* La imagen ocupa todo el contenedor */
-    height: 100%;            /* Ajusta la imagen a la altura del contenedor */
+    width: 50%;             /* La imagen ocupa todo el contenedor */
+    height: 50%;            /* Ajusta la imagen a la altura del contenedor */
     object-fit: cover; 
           /* Asegura que la imagen se ajuste bien sin deformarse */
 }
+
+.adjust {
+    width: 50px; /* Ajusta el tamaño como prefieras */
+    height: 50px; /* Asegúrate de que el ancho y alto sean iguales para el efecto de círculo */
+    border-radius: 10%; /* Esto hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    border: 2px solid #ccc; /* Opcional: Añade un borde */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .circleEvents {
-    width: 650px;
-    height: 650px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #d5f0c1;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -366,6 +396,11 @@ body {
     width: 100%;
     transition: transform 0.4s ease;
 }
+.carousel2-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
 .carousel-container2 {
     display: flex;
     width: 100%;
@@ -380,22 +415,65 @@ body {
     text-align: center;
     z-index: 10; /* Asegura que el texto esté por encima del carrusel */
 }
+.carousel2-text-overlay {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10; /* Asegura que el texto esté por encima del carrusel */
+}
 
 .carousel-slide {
     min-width: 100%;
     transition: transform 0.4s ease;
 }
-
+.carousel2-slide {
+    min-width: 100%;
+    transition: transform 0.4s ease;
+}
 .carousel-slide img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 2s ease; /* Añadir transición para el efecto de zoom */
 }
-
+.carousel2-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 2s ease; /* Añadir transición para el efecto de zoom */
+}
 /* Efecto de zoom en la imagen activa */
 .carousel-slide.active img {
     transform: scale(1.1); /* Zoom del 110% en la imagen activa */
+}
+.carousel2-slide.active img {
+    transform: scale(1.1); /* Zoom del 110% en la imagen activa */
+}
+.carousel3 {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.carousel3-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.carousel3-slide {
+    min-width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.carousel3-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* D*/
@@ -486,28 +564,26 @@ font-family:"Raleway", sans-serif
 }
 .map-button {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 10%;
     margin: 10px;
     background-color:#CD8D7A; /* Color del botón */
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 60px;
     border-radius: 5px;
 }
 .gift-button{
     
         display: inline-block;
-        padding: 15px 20px;
+        padding: 20%;
         margin: 10px;
         background-color:#CD8D7A; /* Color del botón */
         color: white;
         text-align: center;
         text-decoration: none;
-        font-size: 80px;
         border-radius: 5px;
-        width: 400px;          /* Ajusta el ancho del botón */
-        height: 400px;
+        width: 100px;          /* Ajusta el ancho del botón */
+        height: 100px;
         cursor: pointer;       /* Cambia el cursor al pasar sobre el botón */
         display: flex;         /* Usado para centrar el texto dentro del botón */
         justify-content: center; /* Centrar horizontalmente el texto */
@@ -516,6 +592,27 @@ font-family:"Raleway", sans-serif
         margin: 0 auto; 
     
     
+}
+.gift-button2{
+    
+    display: inline-block;
+    padding: 20%;
+    margin: 10px;
+    background-color:#62210d; /* Color del botón */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;          /* Ajusta el ancho del botón */
+    height: 100px;
+    cursor: pointer;       /* Cambia el cursor al pasar sobre el botón */
+    display: flex;         /* Usado para centrar el texto dentro del botón */
+    justify-content: center; /* Centrar horizontalmente el texto */
+    align-items: center;   /* Centrar verticalmente el texto */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+    margin: 0 auto; 
+
+
 }
 .map-button:hover {
     opacity: 0.9; /* Efecto hover */
@@ -714,7 +811,7 @@ font-family:"Raleway", sans-serif
         height: 60px;
         border-radius: 50%;
         border: none;
-        background-color: #f04d4d; /* Color del botón */
+        background-color: #a4666e; /* Color del botón */
         cursor: pointer;
         outline: none;
         position: relative;
@@ -737,8 +834,8 @@ font-family:"Raleway", sans-serif
         position: absolute;
         left: 20px;
         top: 18px;
-        width: 8px;
-        height: 24px;
+        width: 6px;
+        height: 6px;
         background-color: white;
     }
 
@@ -753,7 +850,7 @@ font-family:"Raleway", sans-serif
     }
     .esfumado-vino {
         width: 100%;
-        height: 100vh; /* Ajusta según el tamaño del contenedor deseado */
+        height: auto; /* Ajusta según el tamaño del contenedor deseado */
         background: linear-gradient(135deg, 135deg, #3B0A0A, #5C0D0D, #7E1010, #3B0A0A);
     }
     .Cite{
