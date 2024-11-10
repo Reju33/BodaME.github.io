@@ -17,7 +17,7 @@ body {
     overflow: hidden; /* Para asegurarte de que todo dentro siga las proporciones del círculo */
     display: flex;
     height: 400px;
-    border-radius: 80%; /* Hace el contenedor circular */
+    border-radius: 40%; /* Hace el contenedor circular */
     overflow: hidden; /* Asegura que el contenido dentro del círculo no se salga */
     text-align: center;
     flex-direction: column;
